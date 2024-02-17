@@ -7,7 +7,7 @@ const Navbar = () => {
     const navigate = useNavigate();
     return (
       <>
-        <CNavbar  expand="lg" colorScheme="light" className="bg-light py-3">
+        <CNavbar  expand="lg" colorScheme="dark" className="bg-dark py-3">
           <CContainer className='mx-0'>
             <CNavbarToggler onClick={() => setVisible(!visible)} />
             <CCollapse className="navbar-collapse" visible={visible}>
@@ -16,7 +16,7 @@ const Navbar = () => {
                 <CNavItem>
                   <CNavLink to="/" active>
                     <CButton onClick={()=> navigate('/')}
-                    style={{color: 'black'}}
+                    
                      color="light" variant='ghost' className="ml-2">Home</CButton>
                   </CNavLink>
                 </CNavItem>
