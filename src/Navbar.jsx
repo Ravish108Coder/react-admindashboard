@@ -1,8 +1,10 @@
-import {  CCollapse, CContainer, CNavItem, CNavLink, CNavbar, CNavbarNav, CNavbarToggler, CSidebarToggler } from '@coreui/react'
+import {  CButton, CCollapse, CContainer, CNavItem, CNavLink, CNavbar, CNavbarNav, CNavbarToggler, CSidebarToggler } from '@coreui/react'
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const Navbar = () => {
     const [visible, setVisible] = useState(false)
+    const navigate = useNavigate();
     return (
       <>
         <CNavbar  expand="lg" colorScheme="light" className="bg-light py-3">
@@ -13,7 +15,9 @@ const Navbar = () => {
               <CNavbarNav>
                 <CNavItem>
                   <CNavLink to="/" active>
-                    Home
+                    <CButton onClick={()=> navigate('/')}
+                    style={{color: 'black'}}
+                     color="light" variant='ghost' className="ml-2">Home</CButton>
                   </CNavLink>
                 </CNavItem>
               </CNavbarNav>

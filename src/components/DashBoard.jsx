@@ -1,11 +1,20 @@
 import { cilBank } from '@coreui/icons';
 import CIcon from '@coreui/icons-react';
 import { CCard, CCardBody, CCardText, CCol, CRow } from '@coreui/react';
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import TableComponent from './TableComponent';
+import toast from 'react-hot-toast';
 
 const DashBoard = () => {
+    useEffect(() => {
+        setTimeout(() => {
+            toast.success('Checkout All and Pending Bookings Page Under Car section for more details')
+        }, 1000)
+        setTimeout(() => {
+            toast.success('Checkout Cancel Bookings Page for more details')
+        }, 2000)
+    }, [])
     const liwithlinkStyle = {
         fontSize: "0.9rem",
     };

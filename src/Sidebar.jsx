@@ -12,10 +12,10 @@ const Sidebar = () => {
     return (
         <div className="h-100">
             <CSidebar color="light" style={{height: "100%"}} visible={true} className="bg-dark">
-                <CSidebarBrand style={{padding: "1.5rem 0"}}>BOOKPRO</CSidebarBrand>
+                <CSidebarBrand style={{padding: "2rem 0"}}>BOOKPRO</CSidebarBrand>
                 <CSidebarNav expand="true">
-                    <CNavTitle>
-                    <Link onClick={() => { toast.success('Welcome to DashBoard') }}  style={linkStyle} to="/dashboard">DASHBOARD</Link>
+                    <CNavTitle >
+                    <Link  onClick={() => { toast.success('Welcome to DashBoard') }}  style={linkStyle} to="/dashboard">DASHBOARD</Link>
                     </CNavTitle>
                     <CNavGroup toggler="Hotel"></CNavGroup>
                     <CNavGroup toggler="Tour"></CNavGroup>
